@@ -1,0 +1,67 @@
+<html>
+  <head><title>Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <style>
+    img {
+      width: 240px;
+      height:240px;
+    }
+    .results {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .intro {
+      max-width: 800px;
+    }
+  </style></head>
+  <body>
+    <a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <div class="intro">
+    <p>Visualization of the results of N riffle shuffles of a 60 card deck. Each pixel is a normalized representation of how often the card starting at index X (horiz) ends up at index Y (vertical). Full black = most common, full white = least common</p>
+    <p>Each riffle shuffle is done by perfectly cutting the deck in two, and then repeatedly selecting a random deck to pull one card from. I think this simulates the innaccuracies of a normal shuffle.</p>
+    <p>The true shuffle is an algorithmic uniform random shuffle of the cards.</p>
+    </div>
+    <div class="results">
+    <div>
+    <h2>0 Riffle Shuffles</h2>
+    <img src="./10k_0shuffle.png"/>
+    </div>
+    <div>
+    <h2>1 Riffle Shuffle</h2>
+    <img src="./10k_1shuffle.png"/>
+    </div>
+    <div>
+    <h2>2 Riffle Shuffles</h2>
+    <img src="./10k_2shuffle.png"/>
+    </div>
+    <div>
+    <h2>3 Riffle Shuffles</h2>
+    <img src="./10k_3shuffle.png"/>
+    </div>
+    <div>
+    <h2>4 Riffle Shuffles</h2>
+    <img src="./10k_4shuffle.png"/>
+    </div>
+    <div>
+    <h2>5 Riffle Shuffles</h2>
+    <img src="./10k_5shuffle.png"/>
+    </div>
+    <div>
+    <h2>6 Riffle Shuffles</h2>
+    <img src="./10k_6shuffle.png"/>
+    </div>
+    <div>
+    <h2>7 Riffle Shuffles</h2>
+    <img src="./10k_7shuffle.png"/>
+    </div>
+    <div>
+    <h2>8 Riffle Shuffles</h2>
+    <img src="./10k_8shuffle.png"/>
+    </div>
+    <div>
+    <h2>True Shuffle</h2>
+    <img src="./10k_trueshuffle.png"/>
+    </div>
+    </div>
+  </body>
+</html>
