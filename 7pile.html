@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <title>Pile+Riffle Shuffle Simulation</title>
+  <meta name="description" content="Visualization of Pile Shuffle + Riffle Shuffles on a 60 card deck.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://prodigysim.github.io/shufflesim/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pile + Riffle Shuffle Simulation">
+  <meta property="og:description" content="Visualization of Pile Shuffle + Riffle Shuffles on a 60 card deck.">
+  <meta property="og:image" content="https://prodigysim.github.io/shufflesim/web-misc/og_summary_7pile.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="prodigysim.github.io">
+  <meta property="twitter:url" content="https://prodigysim.github.io/shufflesim/">
+  <meta name="twitter:title" content="Riffle Shuffle Simulation">
+  <meta name="twitter:description" content="Visualization of Pile Shuffle + Riffle Shuffles on a 60 card deck.">
+  <meta name="twitter:image" content="https://prodigysim.github.io/shufflesim/web-misc/og_summary_7pile.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <link rel="stylesheet" href="web-misc/styles.css" />
+</head>
+
+<body>
+  <a class="github-fork-ribbon" href="https://github.com/ProdigySim/shufflesim/" data-ribbon="Fork me on GitHub"
+    title="Fork me on GitHub">Fork me on GitHub</a>
+  <h1>7 Pile + Riffle Shuffle Simulation</h1>
+  <div class="intro">
+    <p>Visualization of running a 7 pile shuffle on a 60 card deck, and then Riffle Shuffling N times. 10k samples of
+      random riffle shuffles have been taken.</p>
+    <p>See <a href="index.html">Main page</a> for general riffle shuffle information.</p>
+  </div>
+  <h1>Static Pile Stacking</h1>
+  <p>In these tests, we kept the pile stacking order the same for each iteration--it adds no randomness.</p>
+  <div class="results">
+    <div>
+      <h2>7 Pile Shuffle Only</h2>
+      <img src="results/10k_7stablepile0shuffle.png" />
+    </div>
+    <div>
+      <h2>1 Riffle Shuffle</h2>
+      <img src="results/10k_7stablepile1shuffle.png" />
+    </div>
+    <div>
+      <h2>2 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile2shuffle.png" />
+    </div>
+    <div>
+      <h2>3 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile3shuffle.png" />
+    </div>
+    <div>
+      <h2>4 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile4shuffle.png" />
+    </div>
+    <div>
+      <h2>5 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile5shuffle.png" />
+    </div>
+    <div>
+      <h2>6 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile6shuffle.png" />
+    </div>
+    <div>
+      <h2>7 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile7shuffle.png" />
+    </div>
+    <div>
+      <h2>8 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile8shuffle.png" />
+    </div>
+    <div>
+      <h2>9 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile9shuffle.png" />
+    </div>
+    <div>
+      <h2>10 Riffle Shuffles</h2>
+      <img src="results/10k_7stablepile10shuffle.png" />
+    </div>
+    <div>
+      <h2>True Shuffle</h2>
+      <img src="results/10k_trueshuffle.png" />
+    </div>
+  </div>
+
+  <h1>Random Pile Stacking</h1>
+  <p>In these tests, we used a <em>uniform random</em> order to stack the piles before each test. I don't stack my piles
+    randomly but maybe you do.</p>
+  <div class="results">
+    <div>
+      <h2>7 Pile Shuffle Only</h2>
+      <img src="results/10k_7pile0shuffle.png" />
+    </div>
+    <div>
+      <h2>1 Riffle Shuffle</h2>
+      <img src="results/10k_7pile1shuffle.png" />
+    </div>
+    <div>
+      <h2>2 Riffle Shuffles</h2>
+      <img src="results/10k_7pile2shuffle.png" />
+    </div>
+    <div>
+      <h2>3 Riffle Shuffles</h2>
+      <img src="results/10k_7pile3shuffle.png" />
+    </div>
+    <div>
+      <h2>4 Riffle Shuffles</h2>
+      <img src="results/10k_7pile4shuffle.png" />
+    </div>
+    <div>
+      <h2>5 Riffle Shuffles</h2>
+      <img src="results/10k_7pile5shuffle.png" />
+    </div>
+    <div>
+      <h2>6 Riffle Shuffles</h2>
+      <img src="results/10k_7pile6shuffle.png" />
+    </div>
+    <div>
+      <h2>7 Riffle Shuffles</h2>
+      <img src="results/10k_7pile7shuffle.png" />
+    </div>
+    <div>
+      <h2>8 Riffle Shuffles</h2>
+      <img src="results/10k_7pile8shuffle.png" />
+    </div>
+    <div>
+      <h2>9 Riffle Shuffles</h2>
+      <img src="results/10k_7pile9shuffle.png" />
+    </div>
+    <div>
+      <h2>10 Riffle Shuffles</h2>
+      <img src="results/10k_7pile10shuffle.png" />
+    </div>
+    <div>
+      <h2>True Shuffle</h2>
+      <img src="results/10k_trueshuffle.png" />
+    </div>
+  </div>
+</body>
+
+</html>
