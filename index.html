@@ -11,13 +11,14 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
     .intro {
-      max-width: 800px;
+      max-width: min(800px, calc(100% - 60px));
     }
   </style></head>
   <body>
     <a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <h1>Riffle Shuffle Simulation</h1>
     <div class="intro">
-    <p>Visualization of the results of N riffle shuffles of a 60 card deck. Each pixel is a normalized representation of how often the card starting at index X (horiz) ends up at index Y (vertical). Full black = most common, full white = least common</p>
+    <p>Visualization of the results of N riffle shuffles of a 60 card deck. Each pixel is a normalized representation of how often the card starting at index X (horiz) ends up at index Y (vertical). <br/>Full black = most common, full white = least common</p>
     <p>Each riffle shuffle is done by perfectly cutting the deck in two, and then repeatedly selecting a random deck to pull one card from. I think this simulates the innaccuracies of a normal shuffle.</p>
     <p>The true shuffle is an algorithmic uniform random shuffle of the cards.</p>
     </div>
