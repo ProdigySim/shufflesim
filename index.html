@@ -1,77 +1,105 @@
 <html>
-  <head><title>Riffle Shuffle Simulation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+
+<head>
+  <title>Riffle Shuffle Simulation</title>
+  <meta name="description" content="Visualization of running N Riffle Shuffles on a 60 card deck.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://prodigysim.github.io/shufflesim/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Riffle Shuffle Simulation">
+  <meta property="og:description" content="Visualization of running N Riffle Shuffles on a 60 card deck.">
+  <meta property="og:image" content="https://prodigysim.github.io/shufflesim/web-misc/og_summary.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="prodigysim.github.io">
+  <meta property="twitter:url" content="https://prodigysim.github.io/shufflesim/">
+  <meta name="twitter:title" content="Riffle Shuffle Simulation">
+  <meta name="twitter:description" content="Visualization of running N Riffle Shuffles on a 60 card deck.">
+  <meta name="twitter:image" content="https://prodigysim.github.io/shufflesim/web-misc/og_summary.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
   <style>
     img {
       width: 240px;
-      height:240px;
+      height: 240px;
     }
+
     .results {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 33%));
       margin: 16px;
     }
+
     .intro {
       max-width: min(800px, calc(100% - 60px));
     }
-  </style></head>
-  <body>
-    <a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
-    <h1>Riffle Shuffle Simulation</h1>
-    <div class="intro">
-    <p>Visualization of the results of N riffle shuffles of a 60 card deck. Each pixel is a normalized representation of how often the card starting at index X (horiz) ends up at index Y (vertical). <br/>Full black = most common, full white = least common</p>
-    <p>Each riffle shuffle is done by perfectly cutting the deck in two, and then repeatedly selecting a random deck to pull one card from. I think this simulates the innaccuracies of a normal shuffle.</p>
+  </style>
+</head>
+
+<body>
+  <a class="github-fork-ribbon" href="https://url.to-your.repo" data-ribbon="Fork me on GitHub"
+    title="Fork me on GitHub">Fork me on GitHub</a>
+  <h1>Riffle Shuffle Simulation</h1>
+  <div class="intro">
+    <p>Visualization of the results of N riffle shuffles of a 60 card deck. Each pixel is a normalized representation of
+      how often the card starting at index X (horiz) ends up at index Y (vertical). <br />Full black = most common, full
+      white = least common</p>
+    <p>Each riffle shuffle is done by perfectly cutting the deck in two, and then repeatedly selecting a random deck to
+      pull one card from. I think this simulates the innaccuracies of a normal shuffle.</p>
     <p>The true shuffle is an algorithmic uniform random shuffle of the cards.</p>
-    </div>
-    <div class="results">
+  </div>
+  <div class="results">
     <div>
-    <h2>0 Riffle Shuffles</h2>
-    <img src="./10k_0shuffle.png"/>
-    </div>
-    <div>
-    <h2>1 Riffle Shuffle</h2>
-    <img src="./10k_1shuffle.png"/>
+      <h2>0 Riffle Shuffles</h2>
+      <img src="./10k_0shuffle.png" />
     </div>
     <div>
-    <h2>2 Riffle Shuffles</h2>
-    <img src="./10k_2shuffle.png"/>
+      <h2>1 Riffle Shuffle</h2>
+      <img src="./10k_1shuffle.png" />
     </div>
     <div>
-    <h2>3 Riffle Shuffles</h2>
-    <img src="./10k_3shuffle.png"/>
+      <h2>2 Riffle Shuffles</h2>
+      <img src="./10k_2shuffle.png" />
     </div>
     <div>
-    <h2>4 Riffle Shuffles</h2>
-    <img src="./10k_4shuffle.png"/>
+      <h2>3 Riffle Shuffles</h2>
+      <img src="./10k_3shuffle.png" />
     </div>
     <div>
-    <h2>5 Riffle Shuffles</h2>
-    <img src="./10k_5shuffle.png"/>
+      <h2>4 Riffle Shuffles</h2>
+      <img src="./10k_4shuffle.png" />
     </div>
     <div>
-    <h2>6 Riffle Shuffles</h2>
-    <img src="./10k_6shuffle.png"/>
+      <h2>5 Riffle Shuffles</h2>
+      <img src="./10k_5shuffle.png" />
     </div>
     <div>
-    <h2>7 Riffle Shuffles</h2>
-    <img src="./10k_7shuffle.png"/>
+      <h2>6 Riffle Shuffles</h2>
+      <img src="./10k_6shuffle.png" />
     </div>
     <div>
-    <h2>8 Riffle Shuffles</h2>
-    <img src="./10k_8shuffle.png"/>
+      <h2>7 Riffle Shuffles</h2>
+      <img src="./10k_7shuffle.png" />
     </div>
     <div>
-    <h2>9 Riffle Shuffles</h2>
-    <img src="./10k_9shuffle.png"/>
+      <h2>8 Riffle Shuffles</h2>
+      <img src="./10k_8shuffle.png" />
     </div>
     <div>
-    <h2>10 Riffle Shuffles</h2>
-    <img src="./10k_10shuffle.png"/>
+      <h2>9 Riffle Shuffles</h2>
+      <img src="./10k_9shuffle.png" />
     </div>
     <div>
-    <h2>True Shuffle</h2>
-    <img src="./10k_trueshuffle.png"/>
+      <h2>10 Riffle Shuffles</h2>
+      <img src="./10k_10shuffle.png" />
     </div>
+    <div>
+      <h2>True Shuffle</h2>
+      <img src="./10k_trueshuffle.png" />
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
